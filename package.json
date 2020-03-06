@@ -12,8 +12,9 @@
   "dependencies": {
     "canvas": "^2.5.0",
     "cropperjs": "^1.5.1",
-    "glob": "^7.1.4",
-    "handtrackjs": "0.0.13"
+    "glob": "^7.1.6",
+    "handtrackjs": "0.0.13",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",

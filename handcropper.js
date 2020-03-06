@@ -3,8 +3,15 @@ var fs = require('fs');
 var Cropper = require('cropperjs');
 var glob = require("glob");
 
-imagesFolder = './data/rwth/data/rwth-phoenix/ph2014-dev-set-handshape-annotations/images/'
-extensionName = 'png'
+var myArgs = process.argv.slice(2);
+
+if (myArgs.length >= 2){
+    imagesFolder = myArgs[0]
+    extensionName = myArgs[1]
+}else{
+    imagesFolder = './'
+    extensionName = 'png'
+}
 
 const modelParams = {
 //    flipHorizontal: true,   // flip e.g for video 
@@ -18,7 +25,8 @@ const modelParams = {
 handTrack.load(modelParams).then(model => {
     console.log("model loaded");
     glob(imagesFolder + "/**/*." + extensionName, function (er, files) {
-        for (file in files){    
+        for (i in files){
+            file = files[i]
             fs.readFile(file, (err, data)=>{
 
                 //error handle
