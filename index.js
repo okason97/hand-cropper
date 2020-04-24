@@ -106,7 +106,7 @@ class ObjectDetection {
     })
 
     // const result = await this.model.executeAsync(batched);
-    self = this
+    var self = this
     return this.model.executeAsync(batched).then(function (result) {
 
 

@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.5.0",
+    "@tensorflow/tfjs-node": "^1.7.3",
+    "canvas": "^2.6.1",
     "cropperjs": "^1.5.1",
     "glob": "^7.1.6",
     "handtrackjs": "0.0.13",
