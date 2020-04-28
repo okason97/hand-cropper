@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "handcropper": "node handcropper.js"
+    "handcropper": "node handcropper.js",
     "postinstall": "cp -f index.js node_modules/handtrackjs/src/index.js"
   },
   "author": "",
