@@ -1,19 +1,14 @@
-# Handcropper guide
+# Hand Cropper
 
-Run 
-
-```sh
-yarn
-````
-
-Go to ./node_modules/handtrackjs/src/
-
-Replace `./node_modules/handtrackjs/src/index.js` with `./index.js`
-
-Run 
+## Usage
 
 ```sh
-node handcropper [<path_to_images> <extension_name>]
-````
+$ git clone git@github.com:okason97/hand-cropper.git
+$ cd hand-cropper
+$ yarn
+$ yarn handcropper [<path_to_images> <extension_name>]
+```
 
 `<path_to_images>` is set to `./` by default and `<extension_name>` is set to `png` by default.
+
+_NOTE: Post-install script will replace `./node_modules/handtrackjs/src/index.js` with `./index.js`_
