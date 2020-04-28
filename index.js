@@ -276,4 +276,4 @@ function calculateMaxScores(scores, numBoxes, numClasses) {
   return [maxes, classes];
 }
 
-module.exports = {load, startVideo, stopVideo, ObjectDetection};
+module.exports = { load, startVideo, stopVideo, ObjectDetection };
